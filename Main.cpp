@@ -2,7 +2,7 @@
  * Main.cpp
  *
  *  Created on: Dec 30, 2012
- *      Author: maulgaya
+ *      Author: maulgaya, ramdan, ricky
  */
 
 #include "cv.h"
