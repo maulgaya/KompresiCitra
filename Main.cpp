@@ -10,8 +10,6 @@
 
 using namespace cv;
 
-void compress(IplImage* img);
-
 /** @function main */
 int main( int argc, char** argv )
 {
@@ -42,15 +40,4 @@ int main( int argc, char** argv )
 	cvReleaseImage( &cannyImg );
 
 	return 0;
-}
-
-void compress(IplImage* img) {
-	for (int y = 0; y < img->height; y++) {
-		uchar* ptr = (uchar*) (img->imageData + y * img->widthStep);
-		for (int x = 0; x < img->width; x++) {
-			//mencari pixel berwarna hitam pada cannyImg
-			//if (ptr[3 * x + 1] == 0 && ptr[3 * x + 2] == 0 && ptr[3 * x + 3] == 0) {
-			//}
-		}
-	}
 }
